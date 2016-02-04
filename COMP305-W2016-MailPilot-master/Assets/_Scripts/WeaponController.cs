@@ -43,7 +43,7 @@ public class WeaponController : MonoBehaviour {
     {
         this._verticalSpeed = Random.Range(this.minVerticalspeed, this.maxVerticalspeed);
         this._horizontalDrift = Random.Range(this.minHorizontalspeed, this.maxHorizontalspeed);
-        float yPosition = Random.Range(-220f, 220f);
+        float yPosition = Random.Range(-150f, 150f);
         this._transform.position = new Vector2(540f, yPosition);
     }
 }

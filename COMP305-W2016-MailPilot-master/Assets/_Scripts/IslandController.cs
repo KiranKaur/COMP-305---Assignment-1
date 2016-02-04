@@ -30,7 +30,7 @@ public class IslandController : MonoBehaviour {
 	}
 
 	public void Reset() {
-		float yPosition = Random.Range (-290f, 290f);
+		float yPosition = Random.Range (-210f, 210f);
 		this._transform.position = new Vector2 (460f,yPosition);
 	}
 }

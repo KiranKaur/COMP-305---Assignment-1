@@ -24,12 +24,12 @@ public class OceanController : MonoBehaviour {
 		this._currentPosition -= new Vector2(this.speed,0);
 		this._transform.position = this._currentPosition;
 
-		if (this._currentPosition.x <= -300) {
+		if (this._currentPosition.x <= -640) {
 			this.Reset ();
 		}
 	}
 
 	public void Reset() {
-		this._transform.position = new Vector2 (300,0);
+		this._transform.position = new Vector2 (640,0);
 	}
 }

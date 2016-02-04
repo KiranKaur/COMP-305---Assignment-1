@@ -39,12 +39,12 @@ public class PlaneController : MonoBehaviour {
 	// PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	private void _checkBounds() {
 		// check if the plane is going out of bounds and keep it inside window boundary
-		if (this._currentPosition.y < -290) {
-			this._currentPosition.y = -290;
+		if (this._currentPosition.y < -210) {
+			this._currentPosition.y = -210;
 		}
 
-		if (this._currentPosition.y > 290) {
-			this._currentPosition.y = 290;
+		if (this._currentPosition.y > 210) {
+			this._currentPosition.y = 210;
 		}
 	}
 }
