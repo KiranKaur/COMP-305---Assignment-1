@@ -5,6 +5,8 @@ public class GameController : MonoBehaviour {
     //PRIVATE INSTANCE VARIABLES
     private int _scoreValue;
     private int _livesValue;
+    [SerializeField]
+    private AudioSource _gameOverSound;
 
     //PUBLIC INSTANCE VARIABLE
     public int weaponNumber = 3;
@@ -84,6 +86,7 @@ public class GameController : MonoBehaviour {
         this.buttercup.gameObject.SetActive(false);
         this.star.gameObject.SetActive(false);
         this.RestartButton.gameObject.SetActive(true);
+        this._gameOverSound.Play();
     }
     //Public Methods
     public void RestartButtonClick()
